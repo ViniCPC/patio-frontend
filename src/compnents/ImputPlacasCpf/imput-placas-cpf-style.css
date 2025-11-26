@@ -1,0 +1,32 @@
+.input-container {
+  display: flex;
+  gap: 10px;
+}
+
+.input-consulta {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input-consulta:focus {
+  border-color: #1B3962;
+}
+
+.btn-buscar {
+  background: #1B3962;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.2s ease;
+}
+
+.btn-buscar:hover {
+  background: #142a4a;
+}

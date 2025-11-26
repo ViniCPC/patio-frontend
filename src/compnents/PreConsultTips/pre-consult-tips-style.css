@@ -1,0 +1,27 @@
+.pre-consult {
+  max-width: 1000px;
+  margin: 0 auto 16px;
+  padding: 0 16px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e0e4f0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.pre-consult h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: #1b3962;
+}
+
+.pre-consult ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.pre-consult li + li {
+  margin-top: 4px;
+}

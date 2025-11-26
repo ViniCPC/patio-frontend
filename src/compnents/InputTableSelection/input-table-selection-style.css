@@ -1,0 +1,20 @@
+.div-select-table {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 24px;
+  flex-wrap: wrap;              /* se a tela for pequena, quebra pra baixo */
+}
+
+/* Coluna da esquerda (consulta) */
+.col-left {
+  flex: 1;
+  min-width: 320px;
+}
+
+/* Coluna da direita (tabela) */
+.col-right {
+  flex: 1;
+  min-width: 320px;
+}

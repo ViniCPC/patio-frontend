@@ -1,0 +1,17 @@
+.consult-container {
+  text-align: center;
+}
+
+.consult-title {
+  background: #1B3962;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.consult-text {
+  font-size: 0.95rem;
+  color: #444;
+}

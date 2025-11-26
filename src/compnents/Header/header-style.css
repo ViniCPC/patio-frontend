@@ -1,0 +1,114 @@
+/* Fonte só para o HEADER */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+.header {
+  width: 100%;
+  background: #1b3962;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* BLOCO DA LOGO */
+.logo-block {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-badge {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: radial-gradient(circle at 30% 30%, #ffffff, #d1d9f0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+.logo-badge span {
+  color: #1b3962;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-title {
+  color: #ffffff;
+  font-size: 1.35rem;     /* título maior */
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.logo-subtitle {
+  color: #d4ddf5;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+/* MENU */
+.header-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.header-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.02rem;      /* letras maiores */
+  font-weight: 500;        /* peso intermediário (não muito fino) */
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.2s ease;
+}
+
+/* Linha embaixo no hover */
+.header-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #ffd166;
+  transition: width 0.2s ease;
+}
+
+.header-nav a:hover {
+  color: #ffd166;
+}
+
+.header-nav a:hover::after {
+  width: 100%;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .header-nav {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+}

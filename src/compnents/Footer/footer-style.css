@@ -1,0 +1,78 @@
+/* FOOTER GERAL */
+.app-footer {
+  margin-top: 40px;
+  background: #1b3962; /* mesmo tom do header */
+  color: #ffffff;
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+/* CONTEÚDO PRINCIPAL DO FOOTER */
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 16px 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* COLUNA ESQUERDA */
+.footer-left h4 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.footer-left p {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: #d9e2ff;
+  max-width: 420px;
+}
+
+/* COLUNA DIREITA */
+.footer-right {
+  text-align: right;
+  font-size: 0.88rem;
+}
+
+.footer-right p {
+  margin: 2px 0;
+  color: #e3e7f5;
+}
+
+/* LINK DE CONTATO */
+.footer-right a {
+  color: #ffdd66;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+/* LINHA DE BAIXO */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 6px;
+  padding: 8px 16px 12px;
+  font-size: 0.8rem;
+  color: #cbd3f0;
+  text-align: center;
+}
+
+/* RESPONSIVO */
+@media (max-width: 700px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-right {
+    text-align: left;
+  }
+}
