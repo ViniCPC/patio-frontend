@@ -24,11 +24,7 @@ export const Dialog = ({ isOpen, onClose, veiculo, error }) => {
   const isLoading = !veiculo && !error && isOpen;
 
   return (
-    <dialog
-      ref={dialogRef}
-      className="custom-dialog"
-      onCancel={handleClose}
-    >
+    <dialog ref={dialogRef} className="custom-dialog" onCancel={handleClose}>
       <div className="dialog-header">
         <h2>{error ? "Aviso" : "Informações do veículo"}</h2>
         <button
@@ -64,6 +60,21 @@ export const Dialog = ({ isOpen, onClose, veiculo, error }) => {
             <p>
               <strong>Pátio:</strong> {veiculo.patio}
             </p>
+            <p>
+              <strong>Modelo:</strong> {veiculo.modelo}
+            </p>
+            <p>
+              <strong>Cidade:</strong> {veiculo.cidade}
+            </p>
+            <p>
+              <strong>Rua:</strong> {veiculo.rua}
+            </p>
+            <p>
+              <strong>Status:</strong> {veiculo.status}
+            </p>
+            <p>
+              <strong>Multa:</strong> {veiculo.multa}
+            </p>
             {/* adiciona outros campos se quiser */}
           </div>
         )}
@@ -77,5 +88,3 @@ export const Dialog = ({ isOpen, onClose, veiculo, error }) => {
     </dialog>
   );
 };
-
-
